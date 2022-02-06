@@ -1,0 +1,38 @@
+.containner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.containner figure.avatar {
+  width: 512px;
+  height: 512px;
+}
+
+.containner figure.avatar img {
+  position: absolute;
+}
+
+.areia {
+  transform: translateY(245px);
+
+  animation: queda 3s linear infinite;
+}
+
+.queda {
+  position: absolute;
+  background-image: url('../img/imagemqueda.png'); /*Chamada das imagens de confetes.*/
+  background-repeat: repeat-y; /*Define que a imagem irá repetir no eixo y, ou seja na vertical.*/
+  height: auto; /*Define o tamanho da altura usada em auto.*/
+  margin-top: 220px;
+  width: 512px;
+  height: 230px;
+  animation: queda 1s linear infinite;
+}
+
+@keyframes queda {
+  100% {
+    transform: translateY(20px);
+  }
+}
